@@ -2,6 +2,7 @@
   <footer class="footer">
     <div class="footer-wrap">
       <img class="footer-logo" src="../assets/logo-pink.png">
+      <img class="footer-logo2" src="../assets/logo_black.png">
       <nav class="footer-nav">
         <ul>
           <li><a class="link" @click="$router.push('/')">HOME</a></li>
@@ -37,6 +38,9 @@ export default {
   height: 55px;
   margin: 10px 50px;
   display: flex;
+}
+.footer-logo2 {
+  display: none;
 }
 .footer-nav ul {
   display: flex;
@@ -81,11 +85,14 @@ a.footer-nav {
 
 @media screen and (max-width: 480px){
   .footer-wrap {
-   height: 40px;
-
+    display: none;
   }
   .footer-logo {
-    height: 35px;
+    display: none;
+  }
+  .copyright {
+    background-color: rgba( 255, 255, 255, 0.6);
+    color: #333;
   }
 }
 </style>

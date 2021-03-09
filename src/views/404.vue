@@ -4,8 +4,10 @@
 
 <style>
 .notfound {
+  display: initial;
    font-family: 'Sen', sans-serif;
-   text-align: center;
-   padding: 100px;
+   width: 100%;
+   padding: 30%;
+   font-size: 6vw;
 }
 </style>

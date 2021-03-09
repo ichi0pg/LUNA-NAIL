@@ -2,6 +2,7 @@
   <header class="header">
     <div class="header-wrap">
       <img class="header-logo" @click="$router.push('/')" src="../assets/logo-pink.png">
+      <img class="header-logo2" @click="$router.push('/')" src="../assets/logo_black.png">
       <nav class="header-nav">
         <ul>
           <li><a class="link" @click="$router.push('/')">HOME</a></li>
@@ -57,6 +58,9 @@ export default {
   height: 70%;
   margin: 20px 30px;
   display: flex;
+}
+.header-logo2 {
+  display: none;
 }
 .header-nav {
   margin-right: 30px;
@@ -121,7 +125,7 @@ a.header-nav li {
     position: fixed;
     top: 0;
     left: calc(-100% - 80px);
-    background: palevioletred;
+    background-color: rgb(219, 112, 146);
     color: #333333;
     box-shadow: 80px 0 rgba(255, 164, 164, 0.3);
     z-index: 999;
@@ -170,7 +174,8 @@ a.header-nav li {
   }
   #hamburger span {
     width: 25px;
-    height: 1.5px;
+    height: 1.3px;
+    background-color: #333;
   }
   #hamburger span:nth-of-type(2) {
     top: 18px;
@@ -179,7 +184,17 @@ a.header-nav li {
     top: 26px;
   }
   .header-wrap {
-    height: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .header-logo {
+    display: none;
+  }
+  .header-logo2 {
+    display: initial;
+  }
+  .header-logo2 {
+    height: 70%;
+    margin: 30px;
   }
 }
 </style>

@@ -29,36 +29,36 @@
                 <img class="wing" src="../assets/line5.png" alt="CONCEPT">
                 <h2>CONCEPT</h2>
                 <div class="con">
-                  <p>指先が綺麗だと、自慢したくなる。<br>指先が綺麗だと、気分も上がる。<br>指先が綺麗になると、仕草も変わる。<br><br>何をする時でも指先は自然と視界に入ります。<br>ネイルをすることで爪も丈夫になり、物を扱う仕草や手の扱い方も綺麗になります。<br><br>是非指先から綺麗になるお手伝いをさせてください。</p>
+                  <p>指先が綺麗だと、自慢したくなる。<br>指先が綺麗だと、気分も上がる。<br>指先が綺麗になると、仕草も変わる。<br><br>何をする時でも指先は自然と視界に入ります。<br>ネイルをすることで爪も丈夫になり、物を扱う仕草や手の扱い方も綺麗になります。<br><br></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="sub-menu">
-      <div class="sub-wrap">
-        <div class="back-color">
-          <div class="instagram">
-            
+      <div class="sub-menu">
+        <div class="sub-wrap">
+          <div class="back-color">
+            <div class="instagram">
+              
+            </div>
+            <div class="sns-link">
+              <a @click="$router.push('/')" class="btn-sns">Instagram</a>
+              <img src="../assets/insta.png" alt="">
+            </div>
           </div>
-          <div class="sns-link">
-            <a @click="$router.push('/')" class="btn-sns">Instagram</a>
-            <img src="../assets/insta.png" alt="">
+          <div class="right-img">
+            <img src="../assets/prf-con.jpg" alt="PROFILE_CONTACT">
+            <h1 class="top-title4">PROFILE & CONTACT</h1>
+            <div class="last-btn">
+              <button class="link-btn" @click="$router.push('/profile')"><span>read more</span></button>
+            </div>
+            <div class="cat1">
+              <img src="../assets/cat2.png" alt="cat1">
+            </div>
           </div>
         </div>
-        <div class="right-img">
-          <img src="../assets/prf-con.jpg" alt="PROFILE_CONTACT">
-          <h1 class="top-title4">PROFILE & CONTACT</h1>
-          <div class="last-btn">
-            <button class="link-btn" @click="$router.push('/profile')"><span>read more</span></button>
-          </div>
-          <div class="cat1">
-            <img src="../assets/cat2.png" alt="cat1">
-          </div>
-        </div>
-      </div>
+      </div> 
     </div>
     <Footer />
   </div>
@@ -220,7 +220,7 @@ a.btn-sns {
 .cat1 img {
   width: 10%;
   left: 5%;
-  bottom: -140px;
+  bottom: -135px;
   object-fit: contain;  
 }
 
@@ -284,11 +284,11 @@ a.btn-sns {
   }
   .about-button {
     width: 100%;
-    top: 58%;
+    top: 60%;
   }
   .menu-button {
     width: 100%;
-    top: 89%;
+    top: 90%;
   }
   .con-button {
     top: 245px;
@@ -307,7 +307,7 @@ a.btn-sns {
   .sub-wrap {
     background-color: initial;
     height: 850px;
-    margin-bottom: 130px;
+    margin-bottom: 120px;
   }
   .sns-wrap p {
     color: #000;
@@ -347,31 +347,77 @@ a.btn-sns {
   .cat1 img {
     width: 15%;
     height: 15%;
-    bottom: -115px;
+    bottom: -130px;
     object-fit: contain;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .top-title2 {
-    top: 55%;
+  #eyechatch img,
+  .contents-left img,
+  .contents-right img,
+  .right-img img {
+    display: none;
   }
-  .top-title4 {
-    bottom: 10%;
+  .back-color {
+    background-color: initial;
+  }
+  h1 {
+    font-size: 10vw;
+  }
+
+  /* 背景 */
+  html, body{
+    height: 100%;
+  }
+  body { 
+    position: relative;
+    background-image: url("../assets/main.jpg") ;
+    background-position: 20% center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+  }
+  div, body{
+    margin: 0;
+    padding: 0;
+    font-family: exo, sans-serif;
+  }
+  .main,
+  .sub-menu {
+  height: 100%; 
+  width: 100%; 
+  }
+  .order1,
+  .order2 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%; 
+    height:45%;
+    bottom: 0; 
+    display: block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    padding: 0.5em;
   }
   /*consept*/
   .order2 {
-    height: 280px;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 50%;
+    padding: 20px 0;
   }
   .con p {
+    width: 90%;
     top: 45px;
+    font-size: 3.5vw;
+    line-height: 2;
   }
   .con-button {
     top: 200px;
-  }
-  .contents-left,
-  .contents-right {
-    height: 150px;
   }
   .contents-left img,
   .contents-right img{
@@ -386,7 +432,7 @@ a.btn-sns {
   .link-btn,
   .btn-center,
   .link-btn {
-    font-size: 10px;
+    font-size: 18px;
   }
 
   /* sub-wrap */
@@ -415,7 +461,7 @@ a.btn-sns {
     font-size: 12px;
   }
   .last-btn {
-    bottom: 30px;
+    bottom: 0;
   }
   /* 猫 */
   .cat1 img {

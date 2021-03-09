@@ -157,7 +157,7 @@ export default {
 @media screen and (max-width: 768px) {
   .prf-wrap {
     width: 80%;
-    height: 700px;
+    height: 750px;
   }
   .second-wrap {
     display: block;
@@ -166,23 +166,25 @@ export default {
   }
   .prf-img {
     width: 100%;
-    height: 45%;
-    margin-left: 20px;
+    height: 40%;
+    margin-left: 50px;
     border-radius: 25px;
   }
   .prf-left {
     width: 40%;
   }
   .prf-center p {
-    top: 30px;
     width: 70%;
+    top: 10px;
+    left: 30%;
   }
   .prf-right p {
     width: 100%;
-    top: 95%;
+    top: 600px;
     left: -40%;
     transform: translateY(-100%);
     text-align: center;
+    line-height: 2;
   }
 
   .wrap {
@@ -214,16 +216,20 @@ export default {
 }
 
 @media screen and (max-width: 480px) {
+  .top-title5 {
+    display: none;
+  }
   .prf-wrap {
     flex-wrap: wrap;
     width: 85%;
     height: 480px;
     border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.6);
   }
   .prf-img {
-    width: 35%;
-    height: 75%;
-    margin: 25px;
+    width: 80%;
+    height: 80%;
+    margin: initial;
     border-radius: 20px;
   }
   .wrap {
@@ -235,10 +241,6 @@ export default {
     width: 100%;
   }
   .prf-center p {
-    width: 45%;
-    top: -130%;
-    left: 50%;
-    transform: translateY(-10px);
   }
   .prf-right {
     text-align: center;
@@ -257,7 +259,7 @@ export default {
     margin: auto;
     padding-bottom: 25px;
     border-radius: 25px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.6);
  }
  .res-left,
  .acc-right {

@@ -59,6 +59,7 @@ body {
   font-family: 'Sen', sans-serif;
   line-height: 1.5;
 }
+
 h1, h2,
 .copyright {
  font-family: 'Sofia', cursive;
@@ -71,9 +72,12 @@ h1 {
   color: #fff;
 }
 h2 {
+  position: absolute;
   text-align: center;
+  width: 100%;
+  top: -5px;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 1.8vw;
   color: #333;
 }
 h3 {
@@ -92,6 +96,7 @@ h3 {
 .wing2 {
   position: absolute;
   width: 45%;
+  top: -3px;
   left: 0;
   right: 0;
   margin: auto;
@@ -131,6 +136,7 @@ h3 {
   margin-bottom: 15px;
 }
 .section-title {
+  position: relative;
   text-align: center;
 }
 /* 猫 */
@@ -139,6 +145,9 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  .top-title {
+    display: none;
+  }
   #eyechatch {
     background-image: initial;
     height: initial;
@@ -150,43 +159,45 @@ h3 {
   }
   .title {
     margin-top: 40px;
+    margin-bottom: initial;
   }
 
   h1 {
-    font-size: 6vw;
+    font-size: 8vw;
     font-weight: initial;
   }
   h2 {
-    font-size: 17px;
     font-weight: initial;
+    font-size: 2vw;
   }
   h3 {
     font-size: 14px;
   }
-  .wing {
-    width: 30%;
-  }
   .wing2 {
-    width: 70%;
+    width: 55%;
   }
 }
 
 @media screen and (max-width: 480px) {
+  h1 {
+    display: none;
+  }
   .title {
-    margin-top: 25px;
+    margin-top: initial;
     margin-bottom: 0;
   }
   .wing {
-    width: 35%;
+    width: 50%;
+    top: 5px;
   }
   .wing2 {
     width: 90%;
   }
   .main-title {
-    font-size: 14px;
+    font-size: 3vw;
   }
   h2 {
-    font-size: 12px;
+    font-size: 4vw;
   }
 }
 </style>
