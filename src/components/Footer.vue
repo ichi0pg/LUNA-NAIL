@@ -79,7 +79,6 @@ a.footer-nav {
   }
   .copyright {
     padding-top: 5px;
-    font-size: 6px;
   }
 }
 
@@ -91,6 +90,7 @@ a.footer-nav {
     display: none;
   }
   .copyright {
+    padding: 10px 0;
     background-color: rgba( 255, 255, 255, 0.6);
     color: #333;
   }

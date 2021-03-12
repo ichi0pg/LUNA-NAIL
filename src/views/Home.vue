@@ -40,11 +40,10 @@
         <div class="sub-wrap">
           <div class="back-color">
             <div class="instagram">
-              
-            </div>
-            <div class="sns-link">
-              <a @click="$router.push('/')" class="btn-sns">Instagram</a>
-              <img src="../assets/insta.png" alt="">
+              <div class="sns-link">
+                <a @click="$router.push('/')" class="btn-sns">Instagram</a>
+                <img src="../assets/insta.png" alt="">
+              </div>
             </div>
           </div>
           <div class="right-img">
@@ -183,17 +182,29 @@ a.btn-sns {
   text-decoration: none;
   border: 1.7px #444343 solid;
   font-size: 18px;
+
+  /* insta */
 }
 .sns-link {
   position: relative;
-  width: 40%;
-  left: 18%;
+  width: 45%;
   top: 380px;
+  text-align: center;
+}
+a.btn-sns {
+  border: 2px solid #444343;
+  border-radius: 0;
+  background: #fff;
+}
+
+a.btn-sns:hover {
+  color: #fff;
+  background: #fac6cb;
 }
 .sns-link img {
   position: absolute;
   width: 25px;
-  left: 10px;
+  left: 35%;
 }
 .right-img img {
   position: absolute;
@@ -203,8 +214,10 @@ a.btn-sns {
 }
 .last-btn {
   position: absolute;
+  width: 55%;
   bottom: -40px;
-  right: 25%;
+  right: 0;
+  text-align: center;
 }
 .link-btn {
   padding: 5px 15px;
@@ -319,17 +332,24 @@ a.btn-sns {
     top: 47px;
     background-color: #fff;
   }
+
+  /* insta */
   .sns-link {
+    width: 100%;
     top: 350px;
-    left: 40%;
   }
   .sns-link img {
-    width: 22px;
+    width: 20px;
   }
   a.btn-sns {
     padding-left: 40px;
     font-size: 14px;
   }
+  .sns-link img {
+    left: 43%;
+  }
+
+
   .right-img img {
     width: 100%;
     height: 40%;
@@ -372,7 +392,7 @@ a.btn-sns {
   }
   body { 
     position: relative;
-    background-image: url("../assets/main.jpg") ;
+    background-image: url("../assets/main2.png") ;
     background-position: 20% center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
@@ -383,9 +403,9 @@ a.btn-sns {
     padding: 0;
     font-family: exo, sans-serif;
   }
-  .main,
+  .main-wrap,
   .sub-menu {
-  height: 100%; 
+  height: 200%; 
   width: 100%; 
   }
   .order1,
@@ -452,7 +472,7 @@ a.btn-sns {
     text-align: center;
   }
   .sns-link img {
-    width: 20px;
+    width: 18px;
     left: 38%;
   }
   a.btn-sns {

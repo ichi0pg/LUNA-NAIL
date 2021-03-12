@@ -47,12 +47,13 @@ export default {
 </script>
 <style scoped>
 .header-wrap {
+  width: 100%;
   height: 90px;
   background-color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 2;
+  z-index: 99;
 }
 .header-logo {
   height: 70%;
@@ -78,12 +79,12 @@ a.header-nav li {
 @media screen and (max-width: 768px) {
   /* hamburger */
   #hamburger {
-    width: 30px;
-    height: 30px;
     position: absolute;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
-    top: 5px;
-    right: 20px;
+    top: 20%;
+    right: 3%;
     transition: 0.4s;
     z-index: 100;
   }
@@ -147,6 +148,7 @@ a.header-nav li {
     border-bottom: 0.5px solid palevioletred;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
     font-size: 16px;
   }
   .menu-content.open {
@@ -169,13 +171,13 @@ a.header-nav li {
   #hamburger {
     width: 10px;
     height: 10px;
-    top: 2px;
+    top: 10px;
     right: 40px;
   }
   #hamburger span {
     width: 25px;
-    height: 1.3px;
-    background-color: #333;
+    height: 1.5px;
+    background-color: rgb(75, 75, 75);
   }
   #hamburger span:nth-of-type(2) {
     top: 18px;
