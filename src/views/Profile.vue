@@ -227,9 +227,9 @@ export default {
     background-color: rgba(255, 255, 255, 0.6);
   }
   .prf-img {
-    width: 80%;
+    width: 40%;
     height: 80%;
-    margin: initial;
+    margin: 30px;
     border-radius: 20px;
   }
   .wrap {
@@ -241,6 +241,9 @@ export default {
     width: 100%;
   }
   .prf-center p {
+    width: 50%;
+    top: -100%;
+    left: 55%;
   }
   .prf-right {
     text-align: center;

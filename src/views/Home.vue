@@ -387,9 +387,6 @@ a.btn-sns:hover {
   }
 
   /* 背景 */
-  html, body{
-    height: 100%;
-  }
   body { 
     position: relative;
     background-image: url("../assets/main2.png") ;

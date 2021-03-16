@@ -505,6 +505,12 @@ p.menu-title {
   .menu-nav {
     display: none;
   }
+  .menu,
+  .gel-menu,
+  .careoff,
+  .other {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
   .menu-wrap {
     height: 150px;
     border-radius: 25px;
